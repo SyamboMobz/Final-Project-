@@ -1,5 +1,4 @@
-package testing;
-
+package kahitano;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
@@ -19,7 +18,9 @@ public class project {
     public static final String ANSI_BLACK_BACKGROUND = "\u001B[40m"; 
     public static final String ANSI_RED_BACKGROUND = "\u001B[41m";  
     public static final String ANSI_YELLOW_BACKGROUND = "\u001B[43m"; 
-
+    
+    public static boolean exit = false;
+    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -31,7 +32,7 @@ public class project {
         	loadingScreen(2500);
             clearConsole();
             // Proceed to the menu
-            boolean exit = false;
+            
             while (!exit) {
                 // Show the menu and let the user select an option
                 showMenu(scanner);
@@ -54,7 +55,7 @@ public class project {
 
     // Show the menu after the loading screen
     public static void showMenu(Scanner scanner) {
-        boolean exit = false;
+        
         try {
             System.out.println(ANSI_BLACK_BACKGROUND + ANSI_YELLOW + "\n===== MENU ======" + RESET);
             System.out.println(ANSI_CYAN + "1. Calculator");
