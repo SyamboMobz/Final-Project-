@@ -1,4 +1,5 @@
 package kahitano;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
@@ -24,7 +25,7 @@ public class project {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print(ANSI_BLACK_BACKGROUND + ANSI_RED + "Do you want to go to the menu? (yes/no): " + RESET );
+        System.out.print(ANSI_BLACK_BACKGROUND + ANSI_WHITE + "Do you want to go to the menu? (yes/no): " + RESET );
         String userChoice = scanner.next().toLowerCase();
 
         if (userChoice.equals("yes")) {
@@ -57,13 +58,30 @@ public class project {
     public static void showMenu(Scanner scanner) {
         
         try {
-            System.out.println(ANSI_BLACK_BACKGROUND + ANSI_YELLOW + "\n===== MENU ======" + RESET);
-            System.out.println(ANSI_CYAN + "1. Calculator");
-            System.out.println(ANSI_GREEN + "2. Area & Circumference of Circle");
-            System.out.println(ANSI_YELLOW + "3. Area & Perimeter of Rectangle");
-            System.out.println(ANSI_BLUE + "4. Convert cm to mm");
-            System.out.println(ANSI_PURPLE + "5. Convert cm to m");
-            System.out.println(ANSI_RED + "6. Exit");
+        	System.out.println(ANSI_BLACK_BACKGROUND + "________________________________________________________________________" + RESET);
+        	System.out.println(ANSI_BLACK_BACKGROUND + "===             _______       ___    ___ _______                     ===" + RESET);
+        	System.out.println(ANSI_BLACK_BACKGROUND + "===            |\\  ___ \\     |\\  \\  /  /|\\  ___ \\                    ===" + RESET);
+        	System.out.println(ANSI_BLACK_BACKGROUND + "===            \\ \\   __/|    \\ \\  \\/  / | \\   __/|                   ===" + RESET);
+        	System.out.println(ANSI_BLACK_BACKGROUND + "===             \\ \\  \\_|/__   \\ \\    / / \\ \\  \\_|/_                  ===" + RESET);
+        	System.out.println(ANSI_BLACK_BACKGROUND + "===              \\ \\  \\_|\\ \\   \\/  /  /   \\ \\  \\_|\\ \\                ===" + RESET);
+        	System.out.println(ANSI_BLACK_BACKGROUND + "===               \\ \\_______\\__/  / /      \\ \\_______\\               ===" + RESET);
+        	System.out.println(ANSI_BLACK_BACKGROUND + "===                \\|_______|\\___/ /        \\|_______|               ===" + RESET);
+        	System.out.println(ANSI_BLACK_BACKGROUND + "===                          \\|___|/                                 ===" + RESET);
+        	System.out.println(ANSI_BLACK_BACKGROUND + "________________________________________________________________________" + RESET);
+        	System.out.println(ANSI_BLACK_BACKGROUND + ANSI_YELLOW + "=███╗   ███╗███████╗███╗   ██╗██╗   ██╗    ██╗  ██╗██╗   ██╗██████╗ ==========================" + RESET);
+            System.out.println(ANSI_BLACK_BACKGROUND + ANSI_YELLOW + "|  ███╗   ███╗███████╗███╗   ██╗██╗   ██╗    ██╗  ██╗██╗   ██╗██████╗  |" + RESET);
+            System.out.println(ANSI_BLACK_BACKGROUND + ANSI_YELLOW + "|  ████╗ ████║██╔════╝████╗  ██║██║   ██║    ██║  ██║██║   ██║██╔══██╗ |" + RESET);
+            System.out.println(ANSI_BLACK_BACKGROUND + ANSI_YELLOW + "|  ██╔████╔██║█████╗  ██╔██╗ ██║██║   ██║    ███████║██║   ██║██████╔╝ |" + RESET);
+            System.out.println(ANSI_BLACK_BACKGROUND + ANSI_YELLOW + "|  ██║╚██╔╝██║██╔══╝  ██║╚██╗██║██║   ██║    ██╔══██║██║   ██║██╔══██╗ |" + RESET);
+            System.out.println(ANSI_BLACK_BACKGROUND + ANSI_YELLOW + "|  ██║ ╚═╝ ██║███████╗██║ ╚████║╚██████╔╝    ██║  ██║╚██████╔╝██████╔╝ |" + RESET);
+            System.out.println(ANSI_BLACK_BACKGROUND + ANSI_YELLOW + "|  ╚═╝     ╚═╝╚══════╝╚═╝  ╚═══╝ ╚═════╝     ╚═╝  ╚═╝ ╚═════╝ ╚═════╝  |" + RESET);
+            System.out.println(ANSI_BLACK_BACKGROUND + ANSI_YELLOW + "========================================================================" + RESET);
+            System.out.println(ANSI_BLACK_BACKGROUND + ANSI_CYAN + "1. Calculator");
+            System.out.println(ANSI_BLACK_BACKGROUND + ANSI_GREEN + "2. Area & Circumference of Circle");
+            System.out.println(ANSI_BLACK_BACKGROUND + ANSI_YELLOW + "3. Area & Perimeter of Rectangle");
+            System.out.println(ANSI_BLACK_BACKGROUND + ANSI_BLUE + "4. Convert cm to mm");
+            System.out.println(ANSI_BLACK_BACKGROUND + ANSI_PURPLE + "5. Convert cm to m");
+            System.out.println(ANSI_BLACK_BACKGROUND + ANSI_RED + "6. Exit");
             System.out.print(ANSI_YELLOW + ANSI_BLACK_BACKGROUND + "Enter your choice: " + RESET);
 
             int choice = scanner.nextInt();
@@ -101,37 +119,31 @@ public class project {
     }
     
     public static void loadingScreen(long waitTimeMS) {
-        String heart = 
-                "   *****      *****    \n" +
-                "  *******    *******   \n" +
-                " *********  *********  \n" +
-                "*********************  \n" +
-                " *******************   \n" +
-                "  *****************    \n" +
-                "   ***************     \n" +
-                "    *************      \n" +
-                "     ***********       \n" +
-                "      *********        \n" +
-                "       *******         \n" +
-                "        *****          \n" +
-                "         ***           \n" +
-                "          *            \n";
-        // Print Heart Art
-        System.out.println(ANSI_BLACK_BACKGROUND + ANSI_RED + heart + RESET);
+        String asyncrone = 
+        		
+        		" █████╗ ███████╗██╗   ██╗███╗   ██╗ ██████╗██████╗  ██████╗ ███╗   ██╗███████╗\n" +
+        		"██╔══██╗██╔════╝╚██╗ ██╔╝████╗  ██║██╔════╝██╔══██╗██╔═══██╗████╗  ██║██╔════╝\n" +
+        		"███████║███████╗ ╚████╔╝ ██╔██╗ ██║██║     ██████╔╝██║   ██║██╔██╗ ██║█████╗  \n" +
+        		"██╔══██║╚════██║  ╚██╔╝  ██║╚██╗██║██║     ██╔══██╗██║   ██║██║╚██╗██║██╔══╝  \n" +
+        		"██║  ██║███████║   ██║   ██║ ╚████║╚██████╗██║  ██║╚██████╔╝██║ ╚████║███████╗\n" +
+        		"╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═══╝ ╚═════╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝╚══════╝";
+        
+        // Print Art
+        System.out.println(ANSI_BLACK_BACKGROUND + ANSI_RED + asyncrone + RESET);
         
         String[] loadingFrames = {"|", "/", "-", "\\"};
         long waitTime = waitTimeMS / 10;
         
         for (int i = 0; i <= 10; i++) {
             String currentFrame = loadingFrames[i % loadingFrames.length];
-            System.out.print(ANSI_CYAN  +"Loading... " + currentFrame + " " + i * 10 + "%\r" + RESET );
+            System.out.print(ANSI_CYAN +"\nLoading... " + currentFrame + " " + i * 10 + "%\r" + RESET );
             
             try {
                 TimeUnit.MILLISECONDS.sleep(waitTime);
             } catch (Exception e) {}
         }
 
-        System.out.println("\nHeart Beat Complete!");
+        System.out.println(ANSI_BLACK_BACKGROUND + ANSI_RED + "ASYNCRONE COMPLATE LOADING...... !" + RESET);
     }
 
     // Clear the console (simulated by overwriting the output)
@@ -234,18 +246,18 @@ public class project {
     public static void calculator(Scanner scanner) {
         while (true) {
             try {
-                System.out.print(ANSI_YELLOW + ANSI_BLACK_BACKGROUND + "Enter first number: ");
+                System.out.print(ANSI_YELLOW + ANSI_BLACK_BACKGROUND + "Enter first number: " + RESET);
                 double num1 = scanner.nextDouble();
                 
-                System.out.println(ANSI_YELLOW + "Choose an operation:");
+                System.out.println(ANSI_YELLOW + ANSI_BLACK_BACKGROUND + "Choose an operation:");
                 System.out.println("1. Addition (+)");
                 System.out.println("2. Subtraction (-)");
                 System.out.println("3. Multiplication (*)");
                 System.out.println("4. Division (/)");
-                System.out.print(ANSI_YELLOW + ANSI_BLACK_BACKGROUND + "Enter your choice (1-4): ");
+                System.out.print(ANSI_YELLOW + ANSI_BLACK_BACKGROUND + "Enter your choice (1-4): " + RESET);
                 int operatorChoice = scanner.nextInt();
 
-                System.out.print(ANSI_YELLOW + ANSI_BLACK_BACKGROUND + "Enter second number: ");
+                System.out.print(ANSI_YELLOW + ANSI_BLACK_BACKGROUND + "Enter second number: " + RESET);
                 double num2 = scanner.nextDouble();
                 
                 switch (operatorChoice) {
@@ -266,10 +278,10 @@ public class project {
                         }
                         break;
                     default:
-                        System.out.println(ANSI_BLUE + "Invalid choice. Please select a valid operation (1-4)." + RESET);
+                        System.out.println(ANSI_BLUE + ANSI_BLACK_BACKGROUND + "Invalid choice. Please select a valid operation (1-4)." + RESET);
                 }
                 // Ask if the user wants to continue the calculator
-                System.out.print(ANSI_YELLOW + "Do you want to continue in Calculator? (yes/no): ");
+                System.out.print(ANSI_BLACK_BACKGROUND + ANSI_WHITE + "Do you want to continue in Calculator? (yes/no): " + RESET);
                 String continueChoice = scanner.next().toLowerCase();
 
                 if (continueChoice.equals("no")) {
