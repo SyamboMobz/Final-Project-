@@ -68,7 +68,7 @@ public class project {
         	System.out.println(ANSI_BLACK_BACKGROUND + "===                \\|_______|\\___/ /        \\|_______|               ===" + RESET);
         	System.out.println(ANSI_BLACK_BACKGROUND + "===                          \\|___|/                                 ===" + RESET);
         	System.out.println(ANSI_BLACK_BACKGROUND + "________________________________________________________________________" + RESET);
-        	System.out.println(ANSI_BLACK_BACKGROUND + ANSI_YELLOW + "=███╗   ███╗███████╗███╗   ██╗██╗   ██╗    ██╗  ██╗██╗   ██╗██████╗ ==========================" + RESET);
+        	System.out.println(ANSI_BLACK_BACKGROUND + ANSI_YELLOW + "===================================================================" + RESET);
             System.out.println(ANSI_BLACK_BACKGROUND + ANSI_YELLOW + "|  ███╗   ███╗███████╗███╗   ██╗██╗   ██╗    ██╗  ██╗██╗   ██╗██████╗  |" + RESET);
             System.out.println(ANSI_BLACK_BACKGROUND + ANSI_YELLOW + "|  ████╗ ████║██╔════╝████╗  ██║██║   ██║    ██║  ██║██║   ██║██╔══██╗ |" + RESET);
             System.out.println(ANSI_BLACK_BACKGROUND + ANSI_YELLOW + "|  ██╔████╔██║█████╗  ██╔██╗ ██║██║   ██║    ███████║██║   ██║██████╔╝ |" + RESET);
