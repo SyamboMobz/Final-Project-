@@ -164,7 +164,7 @@ public class project {
 				}
 				
 				double m = cm / 100;			
-				System.out.println(ANSI_GREEN + cm + " cm is equal to " + m + " m.");
+				System.out.println(ANSI_GREEN + cm + " cm is equal to " + m + " m."+ RESET);
 			} catch (InputMismatchException e) {
 				System.out.println(ANSI_RED + "Error: Invalid input. Please enter numeric values. ");
 				scanner.next(); // Clear  invalid input
@@ -232,7 +232,7 @@ public class project {
     			double circumference = 2 * Math.PI * radius;
     			
     			System.out.println("Area of the circle: " + area);
-    			System.out.println(ANSI_GREEN + "Circumference of the Circle: " + circumference);
+    			System.out.println(ANSI_GREEN + "Circumference of the Circle: " + circumference + RESET);
     		} catch (InputMismatchException e) {
     			System.out.println(ANSI_RED + "Error: Invalid input. Pleasee enter numeric values.");
     			scanner.next();  //Clear invalid input
